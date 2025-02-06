@@ -29,7 +29,7 @@ body {
     background: var(--accent);
     border-radius: 50%;
     position: fixed;
-    pointer-events: none;
+    
     z-index: 999;
 }
 
@@ -39,7 +39,7 @@ body {
     border: 2px solid var(--accent);
     border-radius: 50%;
     position: fixed;
-    pointer-events: none;
+    
     z-index: 999;
     transition: transform 0.1s;
 }
