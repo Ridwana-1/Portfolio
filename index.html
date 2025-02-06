@@ -3,87 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ridwan Abdulkadir - Portfolio</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Ridwan Abdulkadir | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <h1>Ridwan Abdulkadir</h1>
-            <p>Information Risk Management | Computer Science Student</p>
-            <div class="contact-links">
-                <a href="mailto:Ridwanabdulkadir@hotmail.com">Email</a>
-                <a href="https://www.linkedin.com/in/ridwan-abdulkadir-97261a226/" target="_blank">LinkedIn</a>
-            </div>
-        </div>
-    </header>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
 
-    <nav>
-        <ul>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#education">Education</a></li>
+    <nav class="nav">
+        <div class="nav-logo">RA</div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
         </ul>
     </nav>
 
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="experience-card">
-            <h3>Information Risk Management Administrator Intern - International SOS</h3>
-            <ul>
-                <li>Managed One Trust user accounts, including setup, role assignment, and deactivation</li>
-                <li>Developed cybersecurity risk reports and dashboards with RiskRecon</li>
-                <li>Produced tailored vendor reports with actionable recommendations</li>
-                <li>Conducted risk assessments and maintained risk register</li>
-                <li>Created templates for post-incident vendor evaluations</li>
-                <li>Managed ServiceNow tickets for vendor risk assessment access</li>
-                <li>Reviewed vendor compliance with NIST, ISO, and GDPR frameworks</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-grid">
-            <div class="project-card">
-                <h3>RiskRecon Deployment Project</h3>
-                <p>Automated cybersecurity notifications and risk reports distribution for critical vendors. Designed and implemented workflow processes, created swim lane flowcharts, and managed stakeholder communication.</p>
-            </div>
-            <div class="project-card">
-                <h3>Relational Databases</h3>
-                <p>Designed and managed databases in Microsoft Access, focusing on data organization and normalization. Utilized advanced Excel functions for data analysis and visualization.</p>
-            </div>
-            <div class="project-card">
-                <h3>Battleship Game Application</h3>
-                <p>Developed a robust Battleship game using Java, implementing object-oriented programming principles including class design and inheritance hierarchies.</p>
+    <section id="home" class="hero">
+        <div class="glowing-orb"></div>
+        <div class="hero-content">
+            <h1 class="glitch" data-text="Ridwan Abdulkadir">Ridwan Abdulkadir</h1>
+            <div class="typing-text">Information Risk Management | Computer Science</div>
+            <div class="social-links">
+                <a href="mailto:Ridwanabdulkadir@hotmail.com" class="social-btn">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/ridwan-abdulkadir-97261a226/" class="social-btn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
             </div>
         </div>
     </section>
 
-    <section id="education">
-        <h2>Education</h2>
-        <div class="education-grid">
-            <div class="education-card">
-                <h3>Brunel University London</h3>
-                <p>BSc Computer Science (Network Computing) | 2022 - 2026</p>
-                <ul>
-                    <li>Data and Information Analysis using SPSS and SQL</li>
-                    <li>Business Information Systems Analysis</li>
-                    <li>Logic and Computation</li>
-                    <li>Java Programming and OOP</li>
-                </ul>
-            </div>
-            <div class="education-card">
-                <h3>Sir George Monoux College</h3>
-                <p>BTEC Information Technology Extended Diploma | 2020 - 2022</p>
-                <ul>
-                    <li>Python Programming</li>
-                    <li>Cyber Security</li>
-                    <li>Big Data and Information Analysis</li>
-                    <li>Web Development & IT Service Delivery</li>
-                </ul>
+    <section id="experience" class="section">
+        <h2 class="section-title">Experience</h2>
+        <div class="experience-container">
+            <div class="experience-card">
+                <div class="card-header">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Information Risk Management Administrator Intern</h3>
+                    <p>International SOS</p>
+                </div>
+                <div class="card-content">
+                    <ul>
+                        <li>Managed One Trust user accounts and security configurations</li>
+                        <li>Developed cybersecurity risk reports with RiskRecon</li>
+                        <li>Conducted risk assessments and maintained risk register</li>
+                        <li>Reviewed NIST, ISO, and GDPR compliance</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
+
+    <section id="projects" class="section">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>RiskRecon Deployment</h3>
+                    <p>Automated cybersecurity notifications and risk reports distribution system</p>
+                    <div class="tech-stack">
+                        <span>Risk Management</span>
+                        <span>Automation</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>Database Management</h3>
+                    <p>Designed and managed relational databases with advanced data analysis</p>
+                    <div class="tech-stack">
+                        <span>SQL</span>
+                        <span>Excel</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>Battleship Game</h3>
+                    <p>Java-based game implementing OOP principles and design patterns</p>
+                    <div class="tech-stack">
+                        <span>Java</span>
+                        <span>OOP</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="section">
+        <h2 class="section-title">Education</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Brunel University London</h3>
+                    <p class="timeline-date">2022 - 2026</p>
+                    <p>BSc Computer Science (Network Computing)</p>
+                    <ul>
+                        <li>Data Analysis & SQL</li>
+                        <li>Business Information Systems</li>
+                        <li>Java Programming</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Sir George Monoux College</h3>
+                    <p class="timeline-date">2020 - 2022</p>
+                    <p>BTEC Information Technology</p>
+                    <ul>
+                        <li>Python Programming</li>
+                        <li>Cyber Security</li>
+                        <li>Web Development</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2024 Ridwan Abdulkadir</p>
+            <div class="footer-links">
+                <a href="#home">Back to Top</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
