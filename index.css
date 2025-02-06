@@ -12,6 +12,9 @@
     padding: 0;
     box-sizing: border-box;
    
+     
+    
+   
 }
 
 body {
@@ -20,10 +23,30 @@ body {
     color: var(--text);
     line-height: 1.6;
     overflow-x: hidden;
+    cursor: default;
 }
 
 /* Custom Cursor */
+.cursor {
+    width: 8px;
+    height: 8px;
+    background: var(--accent);
+    border-radius: 50%;
+    position: fixed;
+    
+    z-index: 999;
+}
 
+.cursor-follower {
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--accent);
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 999;
+    transition: transform 0.1s;
+}
 
 /* Navigation */
 .nav {
