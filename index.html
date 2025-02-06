@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ridwan Abdulkadir | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <div class="cursor"></div>
@@ -17,7 +17,6 @@
             <li><a href="#home" class="nav-link">Home</a></li>
             <li><a href="#experience" class="nav-link">Experience</a></li>
             <li><a href="#projects" class="nav-link">Projects</a></li>
-            <li><a href="#certifications" class="nav-link">Certifications</a></li>
             <li><a href="#education" class="nav-link">Education</a></li>
         </ul>
     </nav>
@@ -25,7 +24,7 @@
     <section id="home" class="hero">
         <div class="glowing-orb"></div>
         <div class="hero-content">
-            <h1 class="glitch">Ridwan Abdulkadir</h1>
+            <h1 class="glitch" data-text="Ridwan Abdulkadir">Ridwan Abdulkadir</h1>
             <div class="typing-text">Information Risk Management | Computer Science</div>
             <div class="social-links">
                 <a href="mailto:Ridwanabdulkadir@hotmail.com" class="social-btn">
@@ -63,30 +62,34 @@
         <h2 class="section-title">Projects</h2>
         <div class="projects-grid">
             <div class="project-card">
-                <h3>RiskRecon Deployment</h3>
-                <p>Automated cybersecurity notifications and risk reports distribution system</p>
+                <div class="project-content">
+                    <h3>RiskRecon Deployment</h3>
+                    <p>Automated cybersecurity notifications and risk reports distribution system</p>
+                    <div class="tech-stack">
+                        <span>Risk Management</span>
+                        <span>Automation</span>
+                    </div>
+                </div>
             </div>
             <div class="project-card">
-                <h3>Database Management</h3>
-                <p>Designed and managed relational databases with advanced data analysis</p>
+                <div class="project-content">
+                    <h3>Database Management</h3>
+                    <p>Designed and managed relational databases with advanced data analysis</p>
+                    <div class="tech-stack">
+                        <span>SQL</span>
+                        <span>Excel</span>
+                    </div>
+                </div>
             </div>
             <div class="project-card">
-                <h3>Battleship Game</h3>
-                <p>Java-based game implementing OOP principles and design patterns</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="certifications" class="section">
-        <h2 class="section-title">Certifications</h2>
-        <div class="certification-container">
-            <div class="certification-card">
-                <h3>Certified Ethical Hacker (CEH)</h3>
-                <p>Issued by EC-Council - 2024</p>
-            </div>
-            <div class="certification-card">
-                <h3>CompTIA Security+</h3>
-                <p>Issued by CompTIA - 2023</p>
+                <div class="project-content">
+                    <h3>Battleship Game</h3>
+                    <p>Java-based game implementing OOP principles and design patterns</p>
+                    <div class="tech-stack">
+                        <span>Java</span>
+                        <span>OOP</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -97,36 +100,37 @@
             <div class="timeline-item">
                 <div class="timeline-content">
                     <h3>Brunel University London</h3>
+                    <p class="timeline-date">2022 - 2026</p>
                     <p>BSc Computer Science (Network Computing)</p>
+                    <ul>
+                        <li>Data Analysis & SQL</li>
+                        <li>Business Information Systems</li>
+                        <li>Java Programming</li>
+                    </ul>
                 </div>
             </div>
             <div class="timeline-item">
                 <div class="timeline-content">
                     <h3>Sir George Monoux College</h3>
+                    <p class="timeline-date">2020 - 2022</p>
                     <p>BTEC Information Technology</p>
+                    <ul>
+                        <li>Python Programming</li>
+                        <li>Cyber Security</li>
+                        <li>Web Development</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
     <footer class="footer">
-        <p>© 2024 Ridwan Abdulkadir</p>
+        <div class="footer-content">
+            <p>© 2024 Ridwan Abdulkadir</p>
+            <div class="footer-links">
+                <a href="#home">Back to Top</a>
+            </div>
+        </div>
     </footer>
-
-    <script>
-        const cursor = document.querySelector('.cursor');
-        const follower = document.querySelector('.cursor-follower');
-
-        document.addEventListener('mousemove', (e) => {
-            const mouseX = e.clientX;
-            const mouseY = e.clientY;
-
-            cursor.style.left = `${mouseX}px`;
-            cursor.style.top = `${mouseY}px`;
-
-            follower.style.left = `${mouseX}px`;
-            follower.style.top = `${mouseY}px`;
-        });
-    </script>
 </body>
 </html>
