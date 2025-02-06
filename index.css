@@ -165,3 +165,69 @@ body {
     background: #0a192f;
     color: #8892b0;
 }
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0a192f;
+    color: #ccd6f6;
+    overflow: hidden; /* Prevents body from moving while using custom cursor */
+}
+
+/* Cursor Effects */
+.cursor, .cursor-follower {
+    position: absolute;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 9999;
+    transition: all 0.2s ease-in-out; /* Smooth transition */
+}
+
+.cursor {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+}
+
+.cursor-follower {
+    width: 30px;
+    height: 30px;
+    border: 2px solid white;
+    opacity: 0.5;  /* Slight transparency for follower */
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(10, 25, 47, 0.9);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #64ffda;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #ccd6f6;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #64ffda;
+}
