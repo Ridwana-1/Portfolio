@@ -1,4 +1,11 @@
-
+:root {
+    --primary: #2d00f7;
+    --secondary: #6a00f4;
+    --accent: #8900f2;
+    --text: #dadada;
+    --background: #0a0a0a;
+    --card-bg: #1a1a1a;
+}
 
 * {
     margin: 0;
