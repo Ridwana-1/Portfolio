@@ -56,19 +56,8 @@ body {
     padding: 0.5rem;
 }
 
-.nav-link::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: var(--accent);
-    transition: width 0.3s ease;
-}
-
-.nav-link:hover::after {
-    width: 100%;
+.nav-link:hover {
+    color: var(--accent);
 }
 
 /* Hero Section */
@@ -96,7 +85,6 @@ body {
 .typing-text {
     font-size: 1.5rem;
     margin: 1rem 0;
-    border-right: 2px solid var(--accent);
     white-space: nowrap;
     overflow: hidden;
 }
@@ -119,7 +107,7 @@ body {
     justify-content: center;
     color: var(--text);
     text-decoration: none;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .social-btn:hover {
@@ -138,18 +126,6 @@ body {
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 4rem;
-    position: relative;
-}
-
-.section-title::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100px;
-    height: 4px;
-    background: var(--accent);
 }
 
 /* Experience Cards */
@@ -164,6 +140,7 @@ body {
     padding: 2rem;
     transition: transform 0.3s ease;
     border: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 10;
 }
 
 .experience-card:hover {
@@ -186,6 +163,7 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.1);
     position: relative;
     overflow: hidden;
+    z-index: 20;
 }
 
 .project-card:hover {
@@ -216,20 +194,12 @@ body {
     position: relative;
     width: 50%;
     margin-bottom: 2rem;
-}
-
-.timeline-item:nth-child(odd) {
-    left: 0;
-}
-
-.timeline-item:nth-child(even) {
-    left: 50%;
+    z-index: 15;
 }
 
 .timeline-content {
     background: var(--card-bg);
     padding: 2rem;
     border-radius: 15px;
-    position: relative;
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
