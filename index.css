@@ -23,6 +23,12 @@
     text-align: center; /* Aligns all text and content centrally */
   }
   
+  /* New Rule: Center Section Headings */
+  .section-title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
   /* Navigation */
   .nav {
     position: fixed;
