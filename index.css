@@ -73,37 +73,37 @@ body {
     font-weight: bold;
 }
 
-/* Experience Section with Company Image */
-.header-with-image {
+/* Experience Section with Image */
+.experience-flex {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    gap: 2rem;
 }
 
-.header-text {
+.experience-text {
     flex: 3;
 }
 
-.company-image {
+.profile-image {
     flex: 1;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 }
 
-.company-logo {
-    width: 80px;
-    height: 80px;
+.profile-img {
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     border-radius: 50%;
-    border: 2px solid var(--primary);
-    box-shadow: 0 0 10px var(--hover-glow);
+    border: 3px solid var(--primary);
+    box-shadow: 0 0 15px var(--hover-glow);
     transition: all 0.3s ease;
 }
 
-.company-logo:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 15px var(--primary);
+.profile-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px var(--primary);
 }
 
 /* Project cards */
@@ -138,13 +138,11 @@ body {
 }
 
 @media (max-width: 768px) {
-    .header-with-image {
+    .experience-flex {
         flex-direction: column;
-        align-items: flex-start;
     }
     
-    .company-image {
-        margin-top: 1rem;
-        justify-content: flex-start;
+    .profile-image {
+        margin-top: 1.5rem;
     }
 }
