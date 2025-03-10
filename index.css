@@ -1,4 +1,5 @@
 :root {
+<<<<<<< HEAD
     --primary: #e0b47f; /* Gold */
     --secondary: #1a1a1a; /* Deep Black */
     --accent: #f0ece2; /* Soft Beige */
@@ -11,15 +12,77 @@
 body {
     font-family: 'Playfair Display', serif;
     color: var(--text);
+=======
+    --primary: #2d00f7;
+    --secondary: #6a00f4;
+    --accent: #8900f2;
+    --text: #dadada;
+    --background: #0a0a0a;
+    --card-bg: #1a1a1a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+>>>>>>> parent of 90f7e36 (new style)
     background: var(--background);
 }
 
+<<<<<<< HEAD
+=======
+/* Navigation */
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1.5rem;
+    background: rgba(10, 10, 10, 0.9);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--accent);
+    text-shadow: 0 0 10px var(--accent);
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-link {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 1.1rem;
+    position: relative;
+    padding: 0.5rem;
+}
+
+.nav-link:hover {
+    color: var(--accent);
+}
+
+/* Hero Section */
+>>>>>>> parent of 90f7e36 (new style)
 .hero {
     background: url('fashion-hero.jpg') center/cover no-repeat;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+<<<<<<< HEAD
     text-align: center;
 }
 
@@ -40,4 +103,142 @@ body {
 .project-card:hover {
     transform: scale(1.05);
     box-shadow: 0 0 30px var(--hover-glow);
+=======
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    text-align: center;
+    z-index: 1;
+}
+
+.glitch {
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 0.05em 0 0 var(--accent), -0.025em -0.05em 0 var(--primary), 0.025em 0.05em 0 var(--secondary);
+}
+
+.typing-text {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.social-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--card-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text);
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.social-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px var(--accent);
+}
+
+/* Sections */
+.section {
+    padding: 8rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+/* Experience Cards */
+.experience-container {
+    display: grid;
+    gap: 2rem;
+}
+
+.experience-card {
+    background: var(--card-bg);
+    border-radius: 15px;
+    padding: 2rem;
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 10;
+}
+
+.experience-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px rgba(106, 0, 244, 0.3);
+}
+
+/* Projects Grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: var(--card-bg);
+    border-radius: 15px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+    z-index: 20;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px rgba(106, 0, 244, 0.3);
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background: var(--accent);
+}
+
+.timeline-item {
+    padding: 2rem;
+    position: relative;
+    width: 50%;
+    margin-bottom: 2rem;
+    z-index: 15;
+}
+
+.timeline-content {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+>>>>>>> parent of 90f7e36 (new style)
 }
