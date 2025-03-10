@@ -1,4 +1,4 @@
-:root {
+:root { 
     --primary: #E0B47F;   /* Gold accent */
     --secondary: #1A1A1A; /* Dark background */
     --accent: #F0ECE2;    /* Off-white text */
@@ -20,6 +20,7 @@
     background-color: var(--background);
     line-height: 1.6;
     overflow-x: hidden;
+    text-align: center; /* Aligns all text and content centrally */
   }
   
   /* Navigation */
@@ -79,7 +80,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
     padding: 0 5%;
     position: relative;
   }
@@ -109,6 +109,12 @@
     font-weight: 700;
     margin-bottom: 1rem;
     text-shadow: 0 0 20px var(--hover-glow);
+  }
+  
+  .image-placeholder {
+    display: block;
+    margin: 1rem auto;
+    max-width: 100%;
   }
   
   .typing-text {
@@ -200,6 +206,7 @@
     flex-wrap: wrap;
     gap: 0.5rem;
     margin-top: 1.5rem;
+    justify-content: center;
   }
   
   .tech-stack span {
@@ -213,7 +220,6 @@
   
   /* Education Timeline */
   .timeline {
-    position: relative;
     max-width: 1200px;
     margin: 4rem auto;
     padding: 0 5%;
@@ -224,7 +230,6 @@
     margin: 2rem 0;
     background: var(--card-bg);
     border-radius: 15px;
-    position: relative;
   }
   
   .timeline-date {
@@ -239,31 +244,6 @@
     padding: 2rem;
     background: var(--secondary);
     margin-top: 4rem;
-  }
-  
-  /* Cursor Styles */
-  .cursor {
-    width: 20px;
-    height: 20px;
-    border: 2px solid var(--primary);
-    border-radius: 50%;
-    position: fixed;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-    transition: all 0.1s ease;
-    z-index: 999;
-  }
-  
-  .cursor-follower {
-    width: 40px;
-    height: 40px;
-    border: 2px solid rgba(224, 180, 127, 0.3);
-    border-radius: 50%;
-    position: fixed;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-    transition: all 0.3s ease;
-    z-index: 998;
   }
   
   /* Responsive Design */
