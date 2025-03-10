@@ -14,6 +14,8 @@ body {
     background: var(--background);
 }
 
+
+
 /* Navigation */
 .nav {
     position: fixed;
@@ -33,9 +35,6 @@ body {
     font-weight: bold;
     color: var(--accent);
     text-shadow: 0 0 10px var(--accent);
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    color: var(--primary);
 }
 
 .nav-links {
@@ -57,6 +56,7 @@ body {
 }
 
 /* Hero Section */
+
 .hero {
     background: url('fashion-hero.jpg') center/cover no-repeat;
     height: 100vh;
@@ -66,6 +66,7 @@ body {
     text-align: center;
 }
 
+
 .hero h1 {
     font-size: 5rem;
     text-transform: uppercase;
@@ -73,78 +74,14 @@ body {
     font-weight: bold;
 }
 
-/* Experience Section with Company Image */
-.header-with-image {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.nav-logo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary);
 }
 
-.header-text {
-    flex: 3;
-}
-
-.company-image {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.company-logo {
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 2px solid var(--primary);
-    box-shadow: 0 0 10px var(--hover-glow);
-    transition: all 0.3s ease;
-}
-
-.company-logo:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 15px var(--primary);
-}
-
-/* Project cards */
 .project-card:hover {
     transform: scale(1.05);
     box-shadow: 0 0 30px var(--hover-glow);
-}
-
-/* Experience card */
-.experience-card {
-    background-color: var(--card-bg);
-    border-radius: 10px;
-    overflow: hidden;
-    margin-bottom: 2rem;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.experience-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-}
-
-.card-header {
-    background-color: var(--secondary);
-    padding: 1.5rem;
-    border-bottom: 2px solid var(--primary);
-}
-
-.card-content {
-    padding: 1.5rem;
-}
-
-@media (max-width: 768px) {
-    .header-with-image {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    
-    .company-image {
-        margin-top: 1rem;
-        justify-content: flex-start;
-    }
 }
