@@ -1,0 +1,179 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ridwan Abdulkadir | Portfolio</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Custom Cursor Elements -->
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-logo">RA</div>
+    <ul class="nav-links">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#education" class="nav-link">Education</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="glowing-orb"></div>
+    <div class="hero-content">
+      <h1 class="glitch" data-text="Ridwan Abdulkadir">Ridwan Abdulkadir</h1>
+      <div class="typing-text">Big Data Engineer Intern | Computer Science Student|</div>
+      <div class="social-links">
+        <a href="mailto:Ridwanabdulkadir@hotmail.com" class="social-btn">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/ridwan-abdulkadir-97261a226/" class="social-btn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section">
+    <h2 class="section-title">Experience</h2>
+    <div class="experience-container">
+      <div class="experience-card">
+        <div class="card-header">
+          <i class="fas fa-shield-alt"></i>
+          <h3>Information Risk Management Administrator Intern - </h3>
+          <p class="center-text">International SOS</p>
+
+        </div>
+        <div class="card-content">
+          <p>Managed One Trust user accounts and security configurations</p>
+          <p>Developed cybersecurity risk reports with RiskRecon</p>
+          <p>Conducted risk assessments and maintained risk register</p>
+          <p>Reviewed NIST, ISO, and GDPR compliance</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-content">
+          <h3>RiskRecon Deployment</h3>
+          <p>Automated cybersecurity notifications and risk reports distribution system. Tested system on vendors
+            and engaged with clients on how to optimise usage of risk recon.</p>
+          <div class="tech-stack">
+            <span>Risk Management</span>
+            <span>Automation</span>
+            <span>cybersecurity</span>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-content">
+          <h3>Database Management</h3>
+          <p>Designed and managed relational databases with advanced data analysis</p>
+          <div class="tech-stack">
+            <span>SQL</span>
+            <span>Excel</span>
+            <span>Microsoft Access</span>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-content">
+          <h3>Cyber Security Threat Detection Software</h3>
+          <p>I created a Python Threat Detection Log to analyze security logs and identify suspicious activity. My project involved parsing log files, detecting anomalies like failed logins or unusual IPs. I also automated threat detection with Python scripts and utilized libraries like <code>pandas</code> for data analysis and visualization tools to track attack trends. This helped improve incident response and security monitoring.</p>
+          <div class="tech-stack">
+            <span>Python</span>
+            <span>Logs</span>
+            <span>Audit</span>
+    
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section">
+    <h2 class="section-title">Education</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3>Brunel University London</h3>
+          <p class="timeline-date">2022 - 2026</p>
+          <p>BSc Computer Science (Network Computing)</p>
+          <p>Data Analysis & SQL</p>
+          <p>Business Information Systems</p>
+          <p>Networks and operating Systems</p>
+          <p>Full stack Web Development</p>
+          <p>Software Development and Management</p>
+          <p>Algorithms and Applications</p>
+          <p>Usability Design</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3>Sir George Monoux College</h3>
+          <p class="timeline-date">2020 - 2022</p>
+          <p>BTEC Information Technology</p>
+          <p>Python Programming</p>
+          <p>Cyber Security</p>
+          <p>Web Development</p>
+          <p>Computer Games Development</p>
+          <p>Big Data</p>
+          <p>IT Project Management</p>
+          <p>Cloud computing</p>
+          <p>Using systems to manage Information</p>
+          <p>Information systems</p>
+          <p>Social media in Business</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>© 2024 Ridwan Abdulkadir</p>
+      <div class="footer-links"></div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const cursor = document.querySelector('.cursor');
+      const follower = document.querySelector('.cursor-follower');
+
+      document.addEventListener('mousemove', (e) => {
+        const mouseX = e.clientX;
+        const mouseY = e.clientY;
+
+        // Update the custom cursor position
+        if (cursor) {
+          cursor.style.left = mouseX + 'px';
+          cursor.style.top = mouseY + 'px';
+        }
+        if (follower) {
+          follower.style.left = mouseX + 'px';
+          follower.style.top = mouseY + 'px';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
